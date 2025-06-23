@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.notepad.NotepadController" stylesheets="@styles.css">
+    <top>
+        <HBox styleClass="side-bar">
+            <MenuBar style="-fx-background-color: transparent; -fx-font-size: 14;">
+                <Menu styleClass="top-bar" text="File">
+                    <MenuItem text="Open" onAction="#handleOpen"/>
+                    <MenuItem text="Save" onAction="#handleSave"/>
+                </Menu>
+                <Menu text="New Tab">
+                    <MenuItem text="Create New Tab" onAction="#handleNewTab"/>
+                </Menu>
+
+            </MenuBar>
+                    <Button text="Zoom in" onAction="#handleZoomIn" style="-fx-background-color: transparent; -fx-font-size: 14;"/>
+                    <Button text="Zoom out" onAction="#handleZoomOut" style="-fx-background-color: transparent; -fx-font-size: 14;"/>
+            <Button text="Exit" onAction="#handleExit" style="-fx-background-color: transparent; -fx-font-size: 14;"/>
+        </HBox>
+    </top>
+    <center>
+        <TabPane fx:id="tabPane"/>
+    </center>
+</BorderPane>

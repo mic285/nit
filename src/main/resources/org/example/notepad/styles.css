@@ -1,0 +1,16 @@
+.Menu{
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+
+}
+.side-bar .Button{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+.top-bar{
+    -fx-background-color: #f3bfbf;
+    -fx-padding: 10 20 10 20;
+    -fx-height:100px;
+}
